@@ -125,14 +125,19 @@ localhost:8080/api/expense/63a97e0665374f6d5cd7fc79
 
 ```
 <dependency>
-    <groupId>io.mongock</groupId>
-    <artifactId>mongock-springboot</artifactId>
-    <version>5.2.2</version>
-    <scope>provided</scope>
+    <groupId>com.github.cloudyrock.mongock</groupId>
+    <artifactId>mongodb-springdata-v3-driver</artifactId>
+    <version>4.1.13</version>
 </dependency>
+
+
 
 ```
 
 - next enable mongock, open springboot application class and add the annotation @EnableMongock
 - tell mongock where to find the database related codes
 config / DatabaseChangeLog
+  
+
+[follow this tutorial](https://programmingtechie.com/2021/01/06/spring-data-mongodb-tutorial/)
+
