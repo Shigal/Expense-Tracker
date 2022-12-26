@@ -30,7 +30,8 @@ Optional<Expense.> findByName(String name, String amount);
 localhost:8080/api/expense
 
 #### Payload
-```{
+```
+{
 "expenseName": "Netflix",
 "expenseCategory": "ENTERTAINMENT",
 "expenseAmount": 500
@@ -45,7 +46,8 @@ localhost:8080/api/expense
 
 
 #### Response:
-```[
+```
+[
 {
 "id": "63a97e0665374f6d5cd7fc79",
 "expenseName": "Netflix",
@@ -60,7 +62,8 @@ localhost:8080/api/expense
 localhost:8080/api/expense
 
 #### Payload:
-```{
+```
+{
 "id": "63a97e0665374f6d5cd7fc79",
 "expenseName": "Netflix",
 "expenseCategory": "ENTERTAINMENT",
@@ -76,7 +79,8 @@ localhost:8080/api/expense
 localhost:8080/api/expense/Netflix
 
 #### Response:
-```{
+```
+{
 "id": "63a97e0665374f6d5cd7fc79",
 "expenseName": "Netflix",
 "expenseCategory": "ENTERTAINMENT",
@@ -103,7 +107,7 @@ localhost:8080/api/expense/63a97e0665374f6d5cd7fc79
 
 - add mongock's bom to your pom file (which manages versions of all mongo projects) to dependency management
 
-```<!-- https://mvnrepository.com/artifact/com.github.cloudyrock.mongock/mongock-bom -->
+```
 <dependency>
     <groupId>com.github.cloudyrock.mongock</groupId>
     <artifactId>mongock-bom</artifactId>
@@ -124,6 +128,7 @@ localhost:8080/api/expense/63a97e0665374f6d5cd7fc79
 - for runner
 
 ```
+
 <dependency>
     <groupId>com.github.cloudyrock.mongock</groupId>
     <artifactId>mongodb-springdata-v3-driver</artifactId>
